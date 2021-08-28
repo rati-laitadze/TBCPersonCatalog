@@ -1,0 +1,9 @@
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Domain\obj\Debug\netstandard2.0\PersonCatalog.Domain.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Domain\obj\Debug\netstandard2.0\PersonCatalog.Domain.AssemblyInfo.cs
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Domain\obj\Debug\netstandard2.0\PersonCatalog.Domain.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Domain\bin\Debug\netstandard2.0\PersonCatalog.Domain.deps.json
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Domain\bin\Debug\netstandard2.0\PersonCatalog.Domain.dll
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Domain\bin\Debug\netstandard2.0\PersonCatalog.Domain.pdb
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Domain\obj\Debug\netstandard2.0\PersonCatalog.Domain.dll
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Domain\obj\Debug\netstandard2.0\PersonCatalog.Domain.pdb
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Domain\obj\Debug\netstandard2.0\PersonCatalog.Domain.csprojAssemblyReference.cache

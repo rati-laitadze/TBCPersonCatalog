@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PersonCatalog.Domain.Domains
+﻿namespace PersonCatalog.Domain.Domains
 {
     public enum RelationType
     {

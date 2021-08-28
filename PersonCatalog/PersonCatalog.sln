@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonCatalog", "PersonCata
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCatalog.Domain", "PersonCatalog.Domain\PersonCatalog.Domain.csproj", "{2C8DDA58-6A19-4862-B793-21969ABA52C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCatalog.Repository", "PersonCatalog.Repository\PersonCatalog.Repository.csproj", "{F2CFDAFD-09A0-49B3-AD62-82D89C8E5F57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2C8DDA58-6A19-4862-B793-21969ABA52C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C8DDA58-6A19-4862-B793-21969ABA52C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C8DDA58-6A19-4862-B793-21969ABA52C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2CFDAFD-09A0-49B3-AD62-82D89C8E5F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2CFDAFD-09A0-49B3-AD62-82D89C8E5F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2CFDAFD-09A0-49B3-AD62-82D89C8E5F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2CFDAFD-09A0-49B3-AD62-82D89C8E5F57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\obj\Debug\netstandard2.1\PersonCatalog.Repository.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\obj\Debug\netstandard2.1\PersonCatalog.Repository.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\obj\Debug\netstandard2.1\PersonCatalog.Repository.AssemblyInfo.cs
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\obj\Debug\netstandard2.1\PersonCatalog.Repository.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\bin\Debug\netstandard2.1\PersonCatalog.Repository.deps.json
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\bin\Debug\netstandard2.1\PersonCatalog.Repository.dll
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\bin\Debug\netstandard2.1\PersonCatalog.Repository.pdb
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\bin\Debug\netstandard2.1\PersonCatalog.Domain.dll
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\bin\Debug\netstandard2.1\PersonCatalog.Domain.pdb
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\obj\Debug\netstandard2.1\PersonCatalog.Repository.csproj.CopyComplete
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\obj\Debug\netstandard2.1\PersonCatalog.Repository.dll
+C:\Users\admin\Desktop\TBCPersonCatalog\PersonCatalog\PersonCatalog.Repository\obj\Debug\netstandard2.1\PersonCatalog.Repository.pdb
