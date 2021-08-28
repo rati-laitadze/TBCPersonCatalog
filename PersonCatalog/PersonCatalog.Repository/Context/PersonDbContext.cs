@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using PersonCatalog.Domain.Domains;
+using PersonCatalog.Domain.Interfaces;
 using System;
 
 
 namespace PersonCatalog.Repository.Context
 {
-    public class PersonDbContext : DbContext
+    public class PersonDbContext : DbContext, IUnitOfWork
     {
         public PersonDbContext(DbContextOptions<PersonDbContext> options) : base(options)
         {
@@ -173,6 +174,11 @@ namespace PersonCatalog.Repository.Context
                     PersonToID = 4,
                     RelationType = RelationType.Colleague
                 });
+        }
+
+        public void Commit()
+        {
+            SaveChanges();
         }
     }
 }
