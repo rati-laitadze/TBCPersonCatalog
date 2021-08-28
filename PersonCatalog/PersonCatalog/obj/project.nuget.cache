@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cvB8SJgnKCw3g5lck+q1qPTMaKEPwwrnOmRpecUjSKPoEM3lY/U/o1WcjWqnukttOn0jiJ4nWUQdzZFWNd3eXg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\TBCPersonCatalog\\PersonCatalog\\PersonCatalog\\PersonCatalog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
