@@ -1,10 +1,15 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PersonCatalog.Domain.Interfaces;
+using PersonCatalog.Domain.Interfaces.IRepositories;
 using PersonCatalog.Repository.Context;
+using PersonCatalog.Repository.Repositories;
+using System;
 
 namespace PersonCatalog
 {
@@ -20,9 +25,24 @@ namespace PersonCatalog
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers(setupAction =>
+            {
+                setupAction.ReturnHttpNotAcceptable = true;
+
+            }).AddXmlDataContractSerializerFormatters();
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             services.AddDbContext<PersonDbContext>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("PersonContext")));
+            options.UseSqlServer(Configuration.GetConnectionString("PersonContext")));
+
+            services.AddScoped<IUnitOfWork, PersonDbContext>();
+
+            services.AddScoped<IPersonRepository, PersonRepository>();
+
+            services.AddScoped<IPhoneRepository, PhoneRepository>();
+
+            services.AddScoped<IRelationRepository, RelationRepository>();
 
         }
 
@@ -33,6 +53,20 @@ namespace PersonCatalog
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler(appBuilder =>
+                {
+                    appBuilder.Run(async context =>
+                    {
+                        context.Response.StatusCode = 500;
+                        await context.Response.WriteAsync("An unexpected fault happened. Try again later.");
+                    });
+                });
+            }
+
+
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 
