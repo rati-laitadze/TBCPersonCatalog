@@ -14,7 +14,7 @@ namespace PersonCatalog.Domain.Domains
         public string Number { get; set; }
 
         [Required]
-        public PhoneNumberType phoneNumberType { get; set; }
+        public PhoneNumberType PhoneNumberType { get; set; }
 
         public int PersonID { get; set; }
         public virtual Person Person { get; set; }

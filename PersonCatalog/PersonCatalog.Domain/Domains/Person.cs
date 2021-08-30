@@ -20,7 +20,7 @@ namespace PersonCatalog.Domain.Domains
         [Required]
         public DateTime BirthDate { get; set; }
         public int CityID { get; set; }
-        public City City { get; set; }
+        public virtual City City { get; set; }
         public string ImageFilename { get; set; }
 
         public virtual ICollection<PhoneNumber> Phones { get; set; }

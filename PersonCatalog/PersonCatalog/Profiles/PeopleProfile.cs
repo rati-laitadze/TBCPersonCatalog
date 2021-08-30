@@ -13,11 +13,15 @@ namespace PersonCatalog.Web.Profiles
     {
         public PeopleProfile()
         {
-            //TODO: Gender Enum
             CreateMap<Person, PersonDTO>()
-                .ForMember(
-                dest => dest.Age,
-                    opt => opt.MapFrom(src => src.BirthDate.GetCurrentAge()));
+                 .ForMember(
+                 dest => dest.Age,
+                     opt => opt.MapFrom(src => src.BirthDate.GetCurrentAge()))
+                 .ForMember(
+                 dest => dest.Relatives,
+                 opt => opt.MapFrom(src => src.RelativeTo))
+                 .ForMember(dest => dest.ImageHttpPath,
+                    opt => opt.MapFrom(src => ImageFilesHelpers.GetUploadedFilePhysicalPath(src.ImageFilename)));
 
         }
     }

@@ -9,6 +9,7 @@ using PersonCatalog.Domain.Interfaces;
 using PersonCatalog.Domain.Interfaces.IRepositories;
 using PersonCatalog.Repository.Context;
 using PersonCatalog.Repository.Repositories;
+using PersonCatalog.Web.Helpers;
 using System;
 
 namespace PersonCatalog
@@ -36,6 +37,8 @@ namespace PersonCatalog
             services.AddDbContext<PersonDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("PersonContext")));
 
+            ImageFilesHelpers.UploadFolderPhysicalPath = Configuration["UploadFolderPhysicalPath"];
+
             services.AddScoped<IUnitOfWork, PersonDbContext>();
 
             services.AddScoped<IPersonRepository, PersonRepository>();
@@ -43,6 +46,8 @@ namespace PersonCatalog
             services.AddScoped<IPhoneRepository, PhoneRepository>();
 
             services.AddScoped<IRelationRepository, RelationRepository>();
+
+            services.AddScoped<ICityRepository, CityRepository>();
 
         }
 

@@ -16,13 +16,15 @@ namespace PersonCatalog.Controllers
         private readonly IPersonRepository _personRepository;
         private readonly IPhoneRepository _phoneRepository;
         private readonly IRelationRepository _relationRepository;
+        private readonly ICityRepository _cityRepository;
         private readonly IMapper _mapper;
 
-        public PersonController(IPersonRepository personRepository, IPhoneRepository phoneRepository, IRelationRepository relationRepository, IMapper mapper)
+        public PersonController(IPersonRepository personRepository, IPhoneRepository phoneRepository, IRelationRepository relationRepository, ICityRepository cityRepository, IMapper mapper)
         {
             _personRepository = personRepository;
             _phoneRepository = phoneRepository;
             _relationRepository = relationRepository;
+            _cityRepository = cityRepository;
             _mapper = mapper;
         }
 
@@ -40,6 +42,22 @@ namespace PersonCatalog.Controllers
                 retValue.TotalPageNumber = _personRepository.SearchForPeople(new PeopleResourceParameters()).Count() / parameters.ItemPerPage;
             }
             return Ok(retValue);
+        }
+
+        [HttpGet("{id}", Name = "GetPerson")]
+        [HttpHead]
+        public IActionResult GetPerson(int id)
+        {
+            var person = _personRepository.Fetch(id);
+            if (person == null)
+            {
+                return NotFound();
+            }
+            person.Phones = _phoneRepository.Set().Where(a => a.PersonID == person.ID).ToList();
+            person.RelativeTo = _relationRepository.Set().Where(a => a.PersonToID == person.ID || a.PersonFromID == person.ID).ToList();
+            person.City = _cityRepository.Set().Where(a => a.ID == person.CityID).FirstOrDefault();
+
+            return Ok(_mapper.Map<PersonDTO>(person));
         }
     }
 }

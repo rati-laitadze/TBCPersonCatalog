@@ -57,6 +57,7 @@ namespace PersonCatalog.Repository.Context
                     CityID = 1,
                     Name = "rati",
                     Surname = "laitadze",
+                    ImageFilename = "rati",
                     BirthDate = new DateTime(1998, 7, 14),
                     Gender = GenderType.Male,
                     PersonalNumber = "00000000000"
@@ -98,42 +99,42 @@ namespace PersonCatalog.Repository.Context
                     ID = 1,
                     Number = "000000000",
                     PersonID = 1,
-                    phoneNumberType = PhoneNumberType.Mobile
+                    PhoneNumberType = PhoneNumberType.Mobile
                 },
                 new PhoneNumber()
                 {
                     ID = 2,
                     Number = "0320000000",
                     PersonID = 1,
-                    phoneNumberType = PhoneNumberType.Home
+                    PhoneNumberType = PhoneNumberType.Home
                 },
                 new PhoneNumber()
                 {
                     ID = 3,
                     Number = "500000000",
                     PersonID = 2,
-                    phoneNumberType = PhoneNumberType.Mobile
+                    PhoneNumberType = PhoneNumberType.Mobile
                 },
                 new PhoneNumber()
                 {
                     ID = 4,
                     Number = "500000001",
                     PersonID = 3,
-                    phoneNumberType = PhoneNumberType.Mobile
+                    PhoneNumberType = PhoneNumberType.Mobile
                 },
                 new PhoneNumber()
                 {
                     ID = 5,
                     Number = "500000002",
                     PersonID = 4,
-                    phoneNumberType = PhoneNumberType.Mobile
+                    PhoneNumberType = PhoneNumberType.Mobile
                 },
                 new PhoneNumber()
                 {
                     ID = 6,
                     Number = "50000003",
                     PersonID = 4,
-                    phoneNumberType = PhoneNumberType.Office
+                    PhoneNumberType = PhoneNumberType.Office
                 });
 
 
